@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Share+Tech&display=swap');
+
+* {
+    margin: 0;
+    padding: 0 ;
+}
+
+body {
+    background-color: #000000e0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    background-color: #00000043;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: .8rem;
+    min-height: 50px;
+}
+
+.box-img-header {
+    height: 100%;
+}
+
+.img-logo {
+    max-width: 550px;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    gap: 10rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    text-decoration: none;
+    color: #fff;
+    font-size: 5rem;
+}
+
+.nav-links:hover {
+    color: #c6c2c2;
+    transition: .4s;
+}
+
+.box-btn-actions {
+    display: flex;
+    gap: 5rem;
+}
+
+:is(button,.link-action,.btn-footer) {
+    width: 300px;
+    padding: 2.5rem;
+    font-size: 4rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-action{
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.btn-action:hover {
+    background-color: #c6c2c242;;
+    transition: .4s;
+}
+
+.link-action {
+    text-decoration: none;
+    width: 300px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+section {
+    padding: 4rem;
+}
+
+.first-section {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 650px;
+}
+
+.first-section > div {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    min-height: 300px;
+}
+
+h1 {
+    font-size: 12rem;
+    color: #fff;
+    font-weight: 500;
+}
+
+.first-section > div p {
+    color: #fff;
+    font-size: 5rem;
+    font-weight: 200;
+}
+
+
+.box-img-main {
+    max-width: 2500px;
+}
+
+.second-section {
+    background-color: #00000043;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 7rem;
+    padding: 18rem;
+}
+
+.second-section > ul li img {
+    width: 35rem;
+}
+
+.title {
+    color: #fff;
+    font-size: 8rem;
+    font-weight: 400;
+}
+
+.second-section ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.second-section ul li {
+    color: #fff;
+    font-weight: 300;
+}
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30rem;
+}
+
+.third-section > div {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15rem;
+}
+
+.third-section > div img {
+    width: 1400px;
+    border-radius: 100px;
+}
+
+.third-section > div p {
+    max-width: 2000px;
+    color: #fff;
+    text-align: justify;
+    font-size: 6rem;
+    font-weight: 100;
+}
+
+footer {
+    background-color: #00000043;;
+    padding: 15rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10rem;
+    margin-top: 20rem;
+}
+
+footer > div {
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15rem;
+}
+
+.input-field {
+    position: relative;
+}
+
+.input-field input {
+    width: 700px;
+    height: 120px;
+    border-radius: 6px;
+    font-size: 45px;
+    padding: 0 20px;
+    border: 2px solid #fff;
+    background: transparent;
+    color: #fff;
+    outline: none;
+}
+
+.input-field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    transition: .4s;
+    color: #fff;
+    font-size: 45px;
+    pointer-events: none;
+}
+
+input:focus ~ label {
+    top: 0;
+    left: 15px;
+    font-size: 45px;
+    padding: 0 2px;
+    background-color: #000000;
+}
